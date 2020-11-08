@@ -1,0 +1,445 @@
+<!doctype html>
+<!--Ryan Hoang SWE642 Fall 2020 -->
+<html lang=en>
+<head>
+  <style>
+    table {
+      border-collapse: separate;
+      border-spacing: 20px 0;
+    }
+    h1 {
+      color: #006633
+    }
+    h2 {
+      color:#FFCC33
+    }
+    h4 {
+      color:#006633
+    }
+    .bottomright
+    {
+      position: relative;
+      bottom: 0px;
+      right: 0px;
+    }
+    </style>
+</head>
+<body style = "background-color: #adadad">
+
+<h1>CS Department Survey</h1>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<link rel="stylesheet" type ="text/css" href="jquery-ui.css"/>
+<script type = "text/javascript">
+
+
+var now = new Date();
+var hour = now.getHours();
+
+var name;
+
+if(hour < 12)
+{document.write("<h2>Good Morning, ")}
+else
+{
+  hour = hour - 12;
+  if(hour < 6)
+  {
+    document.write("<h2>Good Afternoon, ");
+  }
+  else
+  {
+    document.write("<h2>Good Evening, ");
+  }
+}
+
+if(document.cookie)
+{
+  var cookie = unescape(document.cookie);
+  var cookieTokens = cookie.split("=");
+  name = cookieTokens[1];
+}
+else
+{
+  name = window.prompt("Please enter your name", "name");
+  document.cookie = "name="+ escape(name);
+}
+document.write(name);
+document.writeln("<h5><a href = 'javascript:wrongPerson()'> " + "Click here if you are not " + name + "</a></h5>");
+
+function wrongPerson()
+{
+  document.cookie = "name=null;" + " expires=Thu, 01-Jan-95 00:00:01 GMT";
+  location.reload();
+}
+
+function average()
+{
+  var numstr = document.getElementById('data').value.split(",");
+  var numbers = new Array();
+  var sum = 0;
+  var count = 0;
+  for(var i = 0; i < numstr.length; i++)
+  {
+    if(numstr[i] === "")
+    {
+      continue;
+    }
+    else
+    {
+      sum += Number(numstr[i]);
+      count ++;
+    }
+  }
+  var average = sum/count;
+  document.getElementById('average').value = average;
+}
+
+function max()
+{
+  var numstr = document.getElementById('data').value.split(",");
+  var numbers = new Array();
+  var max = 0;
+  for(var i = 0; i < numstr.length; i++)
+  {
+    if(numstr[i] === "")
+    {
+      continue;
+    }
+    else
+    {
+      if(Number(numstr[i]) > max)
+      {
+        max = Number(numstr[i]);
+      }
+    }
+  }
+  document.getElementById('maximum').value = max;
+}
+
+function validate()
+{
+  var numstr = document.getElementById('data').value.split(",");
+  var numbers = new Array();
+  for(var i = 0; i < numstr.length; i++)
+  {
+    if(numstr[i] === "")
+    {
+      continue;
+    }
+    else
+    {
+      numbers.push(Number(numstr[i]));
+    }
+  }
+  var error = false;
+  if(numbers.length < 10 || numbers.length > 10)
+  {
+    alert("Must provide exactly 10 comma separated numbers.");
+    document.getElementById('average').value = "";
+    document.getElementById('maximum').value = "";
+    error = true;
+  }
+
+  var flag = false;
+  for(var i = 0; i < numbers.length; i++)
+  {
+    if((numbers[i] < 1 || numbers[i] > 100) && !flag)
+    {
+      alert("Numbers must be between 1 and 100 inclusive.");
+      document.getElementById('average').value = "";
+      document.getElementById('maximum').value = "";
+      flag = true;
+      error = true;
+    }
+  }
+ return error;
+}
+
+function dataOnFocusOut()
+{
+  var error = validate();
+  if(!error)
+  {
+    average();
+    max();
+  }
+}
+
+function formValidation()
+{
+var regexName = /^[A-Za-z]+$/;
+var name = document.getElementById('name').value;
+var errorMsg = "";
+var error = false;
+if(!name.match(regexName))
+{
+  errorMsg += "The name field must only contain letters.\n";
+  document.getElementById('name').value = "";
+  error = true;
+}
+
+var regexStreetVarient1 = /^[A-Za-z0-9\s]+$/; //alphanumeric
+var regexStreetVarient2 = /^[A-Za-z\s]+$/;//alphabetical
+var regexStreetVarient3 = /^[0-9\s]+$/;//numeric
+
+var street_address = document.getElementById('street_address').value;
+if(!street_address.match(regexStreetVarient1) && !street_address.match(regexStreetVarient2) && !street_address.match(regexStreetVarient3))
+{
+  errorMsg += "The Street Address field must only contain letters and numbers.\n";
+  document.getElementById('street_address').value = "";
+  error = true;
+}
+
+var regexZip = /^[0-9]+$/;
+var zipcode = document.getElementById('zipcode').value;
+if(!zipcode.match(regexZip))
+{
+  errorMsg += "The Zipcode field must only contain numbers.\n";
+  document.getElementById('zipcode').value = "";
+  error = true;
+}
+/*
+var regexCity = /^[A-Za-z]+$/;
+var city= document.getElementById('city').value;
+if(!city.match(regexCity))
+{
+  errorMsg += "The City field must only contain letters.\n";
+  document.getElementById('city').value = "";
+  error = true;
+}
+
+var regexState = /^[A-Za-z]+$/;
+var state= document.getElementById('state').value;
+if(!state.match(regexState))
+{
+  errorMsg += "The State field must only contain letters.\n";
+  document.getElementById('state').value = "";
+  error = true;
+}
+*/
+
+var checked = 0;
+if(document.getElementById('student_check').checked)
+{checked++;}
+if(document.getElementById('location_check').checked)
+{checked++;}
+if(document.getElementById('campus_check').checked)
+{checked++;}
+if(document.getElementById('atmosphere_check').checked)
+{checked++;}
+if(document.getElementById('dorm_check').checked)
+{checked++;}
+if(document.getElementById('sports_check').checked)
+{checked++;}
+if(checked < 2)
+{
+  errorMsg += "You must check at least two things you liked about the campus.\n";
+  error = true;
+}
+
+checked = 0;
+if(document.getElementById('friend_radio').checked)
+{checked++;}
+if(document.getElementById('television_radio').checked)
+{checked++;}
+if(document.getElementById('internet_radio').checked)
+{checked++;}
+if(document.getElementById('other_radio').checked)
+{checked++;}
+if(checked < 1)
+{
+  errorMsg += "You must choose at least one radio button.\n"
+  error = true;
+}
+
+var email = document.getElementById('email').value;
+var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+if(!email.match(emailRegex))
+{
+  errorMsg += "Please provide a valid email address.";
+  document.getElementById('email').value = "";
+  error = true;
+}
+
+$('#error').html(errorMsg);
+if(error)
+{
+  console.log(error);
+  $("#error").dialog();
+}
+}
+
+function ajaxLookup()
+{
+  $.ajax({
+    url: 'zipcodes.json',
+    dataType: 'JSON',
+    jsonpCallback: 'callback',
+    type: 'GET',
+    success: function (data) {parseJSON(data);}
+  });
+}
+
+function parseJSON(data)
+{
+  var match = false;
+  var zipcodes = data["zipcodes"];
+  for(var i = 0; i < zipcodes.length; i++)
+  {
+    if(zipcodes[i]["zip"] === document.getElementById('zipcode').value)
+    {
+      //console.log(zipcodes[i]["city"]);
+      //console.log(zipcodes[i]["state"]);
+      match = true;
+      document.getElementById('city').innerHTML = zipcodes[i]["city"];
+      document.getElementById('state').innerHTML = zipcodes[i]["state"];
+    }
+  }
+  if(!match)
+  {
+    document.getElementById('zipcode').value = "Invalid Zip";
+    document.getElementById('city').innerHTML = "";
+    document.getElementById('state').innerHTML = "";
+  }
+}
+
+</script>
+
+<div id="error" title="Error" style="display:none"></div>
+
+
+<form id="survey_form" autocomplete="on">
+<!--<h5> Required *</h5>-->
+
+  <label for="username">Username</label><br>
+  <input type="text" id="username" name="username" placeholder="Username" autofocus><br><br>
+
+  <label for="Name">Name</label><br>
+  <input type="text" id="name" name="name" placeholder="Name" ><br><br>
+
+  <label for="street_address">Street Address</label><br>
+  <input type="text" id="street_address" name="street_address" placeholder="Address"><br><br>
+
+City: <div id=city></div><br>
+State: <div id=state></div><br>
+<!--
+  <label for="city">City *</label><br>
+  <input type="text" id="city" name="city"placeholder="City" ><br><br>
+  <label for="state">State *</label><br>
+  <input type="text" id="state" name="state" placeholder="State" ><br><br>
+-->
+
+
+  <label for="zipcode">Zipcode</label><br>
+  <input type="text" id="zipcode" name="zipcode" placeholder="Zipcode" onblur="ajaxLookup()"><br><br>
+
+  <label for="telephone">Phone Number</label><br>
+  <input type="tel" id="telephone" name="telephone" placeholder="(XXX)-XXX-XXXX" ><br><br>
+
+  <label for="email">Email</label><br>
+  <input type="email" id="email" name="email" placeholder="Email@domain.com" ><br><br>
+
+  <label for="url">URL:</label><br>
+  <input type="url" id="url" name="url" placeholder="www.example.com"><br><br>
+
+  <label for="date">Date of survey:</label><br>
+  <input type="date" id="date" name="date"><br><br>
+
+
+
+  <h2>What did you like most about the campus?</h2>
+
+  <fieldset>
+  <label for="student_check">Students</label><br>
+  <input type="checkbox" id="student_check" name="student_check"><br><br>
+
+  <label for="location_check">Location</label><br>
+  <input type="checkbox" id="location_check" name="location_check"><br><br>
+
+  <label for="campus_check">Campus</label><br>
+  <input type="checkbox" id="campus_check" name="campus_check"><br><br>
+
+  <label for="atmosphere_check">Atmosphere</label><br>
+  <input type="checkbox" id="atmosphere_check" name="atmosphere_check"><br><br>
+
+  <label for="dorm_check">Dorms</label><br>
+  <input type="checkbox" id="dorm_check" name="dorm_check"><br><br>
+
+  <label for="sports_check">Sports</label><br>
+  <input type="checkbox" id="sports_check" name="sports_check"><br><br>
+</fieldset>
+
+
+<h2>How did you become interested in the university?</h2>
+
+  <fieldset>
+  <label for="friend_radio">Friends</label><br>
+  <input type="radio" id="friend_radio" name="radio" value = "friends"><br><br>
+
+  <label for="television_radio">Television</label><br>
+  <input type="radio" id="television_radio" name="radio" value = "television"><br><br>
+
+  <label for="internet_radio">Internet</label><br>
+  <input type="radio" id="internet_radio" name="radio" value = "internet"><br><br>
+
+  <label for="other_radio">Other</label><br>
+  <input type="radio" id="other_radio" name="radio" value = "other"><br><br>
+  </fieldset>
+
+
+  <h2>When did you graduate High School?</h2>
+  <label for="months">Graduation Month</label>
+  <input list="months">
+<datalist id="months">
+  <option value ="January">
+    <option value ="February">
+      <option value ="March">
+        <option value ="April">
+          <option value ="May">
+            <option value ="June">
+              <option value ="July">
+                <option value ="August">
+                  <option value ="September">
+                    <option value ="October">
+                      <option value ="November">
+                        <option value ="December">
+
+</datalist>
+<br>
+<br>
+<label for="grad_year">Graduation Year</label>
+<input type="text" name="grad_year" id="grad_year" placeholder="2020"></input>
+
+<h2>How likely are you to recommend George Mason to other prospective students?<h2>
+  <input list="recommend">
+<datalist id="recommend">
+  <option value ="Very Likely">
+    <option value ="Likely">
+      <option value ="Unlikely">
+        </datalist>
+<br>
+<br>
+
+<label for="data">Data:</label>
+<input type="text" name="data" id="data" onfocusout="dataOnFocusOut()"></input>
+<br>
+<label for="average">Average:</label>
+<input type="text" name="average" id="average"></input>
+<br>
+<label for="maximum">Maximum:</label>
+<input type="text" name="maximum" id="maximum"></input>
+
+<br>
+
+  <h2>Additional Comments<h2>
+
+  <textarea name = "comments" rows="10" cols="30">
+    </textarea>
+    <br>
+    <button type="button" value="submit" onclick="formValidation()">Submit </button>
+    <input type="reset">
+  </form>
+<img style="position: fixed; right: 0px; bottom: 0px;" src="mason.png" width ="50" height="50" alt="George Mason">
+</body>
+</html>
