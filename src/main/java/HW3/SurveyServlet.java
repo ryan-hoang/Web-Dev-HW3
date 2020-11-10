@@ -1,7 +1,5 @@
 package HW3;
 
-import sun.misc.Request;
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -26,6 +24,10 @@ public class SurveyServlet extends HttpServlet
 
 
 
+
+
+
+
     String[] nums = request.getParameter("data").split(",");
     //print(response,nums.toString());
     ArrayList<Integer> data = new ArrayList<Integer>();
@@ -39,7 +41,7 @@ public class SurveyServlet extends HttpServlet
 
     DataBean db = new DataBean();
     db.setMean(mean);
-    db.setStDeviation(standardDeviation);
+    db.setStandardDeviation(standardDeviation);
 
     HttpSession session = request.getSession();
     session.setAttribute("dataBean", db); //Save the data bean to the session object

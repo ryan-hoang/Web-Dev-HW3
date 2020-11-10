@@ -41,3 +41,185 @@
 10-Nov-2020 00:06:01.868 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 10-Nov-2020 00:06:01.886 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 10-Nov-2020 00:06:01.887 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 03:20:09.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.59
+10-Nov-2020 03:20:09.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2020 16:57:18 UTC
+10-Nov-2020 03:20:09.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.59.0
+10-Nov-2020 03:20:09.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Nov-2020 03:20:09.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-19041-Microsoft
+10-Nov-2020 03:20:09.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Nov-2020 03:20:09.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+10-Nov-2020 03:20:09.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+10-Nov-2020 03:20:09.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Nov-2020 03:20:09.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 03:20:09.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 03:20:09.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/conf/logging.properties
+10-Nov-2020 03:20:09.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Nov-2020 03:20:09.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Nov-2020 03:20:09.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Nov-2020 03:20:09.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Nov-2020 03:20:09.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Nov-2020 03:20:09.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 03:20:09.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 03:20:09.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/temp
+10-Nov-2020 03:20:09.411 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+10-Nov-2020 03:20:09.556 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 03:20:09.570 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Nov-2020 03:20:09.581 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 558 ms
+10-Nov-2020 03:20:09.607 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Nov-2020 03:20:09.607 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.59
+10-Nov-2020 03:20:09.616 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/docs]
+10-Nov-2020 03:20:09.825 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/docs] has finished in [208] ms
+10-Nov-2020 03:20:09.825 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/examples]
+10-Nov-2020 03:20:10.257 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/examples] has finished in [432] ms
+10-Nov-2020 03:20:10.257 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/host-manager]
+10-Nov-2020 03:20:10.292 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/host-manager] has finished in [35] ms
+10-Nov-2020 03:20:10.292 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/manager]
+10-Nov-2020 03:20:10.325 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/manager] has finished in [33] ms
+10-Nov-2020 03:20:10.325 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/ROOT]
+10-Nov-2020 03:20:10.350 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/ROOT] has finished in [25] ms
+10-Nov-2020 03:20:10.352 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 03:20:10.360 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 778 ms
+10-Nov-2020 03:22:10.507 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+10-Nov-2020 03:22:10.507 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+10-Nov-2020 03:22:10.545 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+10-Nov-2020 03:22:40.602 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+10-Nov-2020 03:22:40.602 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+10-Nov-2020 03:22:40.627 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+10-Nov-2020 03:24:20.765 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 03:24:20.853 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [87] ms
+10-Nov-2020 03:27:11.586 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/HW3]
+10-Nov-2020 13:43:08.533 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+10-Nov-2020 13:43:08.533 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 13:43:08.555 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Nov-2020 13:43:08.571 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 13:43:08.575 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 14:26:34.498 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.59
+10-Nov-2020 14:26:34.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2020 16:57:18 UTC
+10-Nov-2020 14:26:34.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.59.0
+10-Nov-2020 14:26:34.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Nov-2020 14:26:34.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-19041-Microsoft
+10-Nov-2020 14:26:34.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Nov-2020 14:26:34.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+10-Nov-2020 14:26:34.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+10-Nov-2020 14:26:34.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Nov-2020 14:26:34.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 14:26:34.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 14:26:34.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/conf/logging.properties
+10-Nov-2020 14:26:34.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Nov-2020 14:26:34.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Nov-2020 14:26:34.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Nov-2020 14:26:34.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Nov-2020 14:26:34.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Nov-2020 14:26:34.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 14:26:34.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 14:26:34.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/temp
+10-Nov-2020 14:26:34.501 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+10-Nov-2020 14:26:34.612 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 14:26:34.621 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Nov-2020 14:26:34.632 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 421 ms
+10-Nov-2020 14:26:34.659 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Nov-2020 14:26:34.659 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.59
+10-Nov-2020 14:26:34.671 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/docs]
+10-Nov-2020 14:26:34.886 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/docs] has finished in [215] ms
+10-Nov-2020 14:26:34.886 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/examples]
+10-Nov-2020 14:26:35.347 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/examples] has finished in [461] ms
+10-Nov-2020 14:26:35.347 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/host-manager]
+10-Nov-2020 14:26:35.382 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/host-manager] has finished in [35] ms
+10-Nov-2020 14:26:35.382 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/manager]
+10-Nov-2020 14:26:35.414 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/manager] has finished in [32] ms
+10-Nov-2020 14:26:35.414 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/ROOT]
+10-Nov-2020 14:26:35.439 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/ROOT] has finished in [25] ms
+10-Nov-2020 14:26:35.441 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 14:26:35.450 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 817 ms
+10-Nov-2020 14:26:55.480 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 14:26:55.596 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [116] ms
+10-Nov-2020 14:32:56.136 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/HW3]
+10-Nov-2020 14:32:56.164 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 14:32:56.266 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [102] ms
+10-Nov-2020 15:06:09.628 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/HW3]
+10-Nov-2020 15:06:19.654 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 15:06:19.761 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [107] ms
+10-Nov-2020 15:17:40.799 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/HW3]
+10-Nov-2020 15:17:40.820 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 15:17:40.918 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [98] ms
+10-Nov-2020 15:24:52.096 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/HW3]
+10-Nov-2020 15:25:02.135 INFO [localhost-startStop-6] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 15:25:02.664 INFO [localhost-startStop-6] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 15:25:02.667 INFO [localhost-startStop-6] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [532] ms
+10-Nov-2020 15:29:33.580 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/HW3]
+10-Nov-2020 15:30:23.673 INFO [localhost-startStop-7] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 15:30:24.207 INFO [localhost-startStop-7] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 15:30:24.209 INFO [localhost-startStop-7] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [536] ms
+10-Nov-2020 15:34:25.059 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/HW3]
+10-Nov-2020 15:35:05.137 INFO [localhost-startStop-8] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 15:35:05.715 INFO [localhost-startStop-8] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 15:35:05.720 INFO [localhost-startStop-8] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [582] ms
+10-Nov-2020 15:42:39.041 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+10-Nov-2020 15:42:39.042 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 15:42:39.062 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Nov-2020 15:42:39.077 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 15:42:39.079 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 15:43:17.361 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.59
+10-Nov-2020 15:43:17.363 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2020 16:57:18 UTC
+10-Nov-2020 15:43:17.363 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.59.0
+10-Nov-2020 15:43:17.363 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Nov-2020 15:43:17.363 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-19041-Microsoft
+10-Nov-2020 15:43:17.363 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Nov-2020 15:43:17.363 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+10-Nov-2020 15:43:17.363 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/conf/logging.properties
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59
+10-Nov-2020 15:43:17.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/temp
+10-Nov-2020 15:43:17.365 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+10-Nov-2020 15:43:17.522 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 15:43:17.530 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Nov-2020 15:43:17.540 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 471 ms
+10-Nov-2020 15:43:17.561 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Nov-2020 15:43:17.561 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.59
+10-Nov-2020 15:43:17.577 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 15:43:18.396 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 15:43:18.442 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [866] ms
+10-Nov-2020 15:43:18.443 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/docs]
+10-Nov-2020 15:43:19.370 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 15:43:19.373 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/docs] has finished in [929] ms
+10-Nov-2020 15:43:19.373 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/examples]
+10-Nov-2020 15:43:20.218 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 15:43:20.276 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/examples] has finished in [903] ms
+10-Nov-2020 15:43:20.276 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/host-manager]
+10-Nov-2020 15:43:21.137 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 15:43:21.141 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/host-manager] has finished in [865] ms
+10-Nov-2020 15:43:21.141 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/manager]
+10-Nov-2020 15:43:22.090 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 15:43:22.094 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/manager] has finished in [953] ms
+10-Nov-2020 15:43:22.094 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/ROOT]
+10-Nov-2020 15:43:23.022 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 15:43:23.024 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/ROOT] has finished in [930] ms
+10-Nov-2020 15:43:23.029 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Nov-2020 15:43:23.035 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 5495 ms
+10-Nov-2020 15:54:14.468 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/HW3]
+10-Nov-2020 15:54:24.622 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 15:54:25.255 INFO [localhost-startStop-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 15:54:25.257 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [635] ms
+10-Nov-2020 16:01:06.388 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/HW3]
+10-Nov-2020 16:01:06.415 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [HW3] registered the JDBC driver [oracle.jdbc.OracleDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Nov-2020 16:01:06.416 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [HW3] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ java.util.TimerThread.mainLoop(Timer.java:526)
+ java.util.TimerThread.run(Timer.java:505)
+10-Nov-2020 16:01:16.463 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 16:01:17.094 INFO [localhost-startStop-3] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 16:01:17.097 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [634] ms
+10-Nov-2020 16:05:58.016 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/HW3]
+10-Nov-2020 16:06:08.164 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war]
+10-Nov-2020 16:06:08.805 INFO [localhost-startStop-4] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Nov-2020 16:06:08.807 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/mnt/c/Users/Ryan/Documents/Bash/SWE642/apache-tomcat-8.5.59/webapps/HW3.war] has finished in [643] ms
