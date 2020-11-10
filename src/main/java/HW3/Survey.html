@@ -354,30 +354,29 @@ State: <div id=state></div><br>
 
   <h2>What did you like most about the campus?</h2>
 
-  <fieldset>
+
   <label for="student_check">Students</label><br>
-  <input type="checkbox" id="student_check" name="student_check"><br><br>
+  <input type="checkbox" id="student_check" name="checkboxes" value="students"><br><br>
 
   <label for="location_check">Location</label><br>
-  <input type="checkbox" id="location_check" name="location_check"><br><br>
+  <input type="checkbox" id="location_check" name="checkboxes" value="location"><br><br>
 
   <label for="campus_check">Campus</label><br>
-  <input type="checkbox" id="campus_check" name="campus_check"><br><br>
+  <input type="checkbox" id="campus_check" name="checkboxes" value="campus"><br><br>
 
   <label for="atmosphere_check">Atmosphere</label><br>
-  <input type="checkbox" id="atmosphere_check" name="atmosphere_check"><br><br>
+  <input type="checkbox" id="atmosphere_check" name="checkboxes" value="atmosphere"><br><br>
 
   <label for="dorm_check">Dorms</label><br>
-  <input type="checkbox" id="dorm_check" name="dorm_check"><br><br>
+  <input type="checkbox" id="dorm_check" name="checkboxes" value="dorms"><br><br>
 
   <label for="sports_check">Sports</label><br>
-  <input type="checkbox" id="sports_check" name="sports_check"><br><br>
-</fieldset>
+  <input type="checkbox" id="sports_check" name="checkboxes" value="sports"><br><br>
+
 
 
 <h2>How did you become interested in the university?</h2>
 
-  <fieldset>
   <label for="friend_radio">Friends</label><br>
   <input type="radio" id="friend_radio" name="radio" value = "friends"><br><br>
 
@@ -389,12 +388,11 @@ State: <div id=state></div><br>
 
   <label for="other_radio">Other</label><br>
   <input type="radio" id="other_radio" name="radio" value = "other"><br><br>
-  </fieldset>
 
 
   <h2>When did you graduate High School?</h2>
   <label for="months">Graduation Month</label>
-  <input list="months">
+  <input list="months" name ="gradMonth">
 <datalist id="months">
   <option value ="January">
     <option value ="February">
@@ -416,7 +414,7 @@ State: <div id=state></div><br>
 <input type="text" name="grad_year" id="grad_year" placeholder="2020"></input>
 
 <h2>How likely are you to recommend George Mason to other prospective students?</h2>
-  <input list="recommend">
+  <input list="recommend" name ="recommend">
 <datalist id="recommend">
   <option value ="Very Likely">
     <option value ="Likely">

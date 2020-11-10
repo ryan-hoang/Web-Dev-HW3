@@ -22,7 +22,97 @@ public class SurveyServlet extends HttpServlet
     * else forward the request to SimpleAcknowledgement.jsp
     */
 
+    StudentBean sb = new StudentBean();
 
+    String studentid = request.getParameter("studentID");
+    sb.setStudentID(studentid);
+
+    String username = request.getParameter("username");
+    sb.setUsername(username);
+
+    String name = request.getParameter("name");
+    sb.setName(name);
+
+    String street = request.getParameter("street_address");
+    sb.setStreet(street);
+
+    String city = request.getParameter("city");
+    sb.setCity(city);
+
+    String state = request.getParameter("state");
+    sb.setState(state);
+
+    String zipcode = request.getParameter("zipcode");
+    sb.setZipcode(zipcode);
+
+    String telephone = request.getParameter("telephone");
+    sb.setPhone(telephone);
+
+    String email = request.getParameter("email");
+    sb.setEmail(email);
+
+    String url = request.getParameter("url");
+    sb.setUrl(url);
+
+    String date = request.getParameter("date");
+    sb.setDate(date);
+
+    boolean studentCheck = false;
+    boolean locationCheck = false;
+    boolean campusCheck = false;
+    boolean atmosphereCheck = false;
+    boolean dormsCheck = false;
+    boolean sportsCheck = false;
+
+    String[] checkboxes =  request.getParameterValues("checkboxes");
+    for(String n : checkboxes)
+    {
+     if(n.equals("students")){studentCheck = true;}
+     else if(n.equals("location")){locationCheck = true;}
+     else if(n.equals("campus")){campusCheck = true;}
+     else if(n.equals("atmosphere")){atmosphereCheck = true;}
+     else if(n.equals("dorms")){dormsCheck = true;}
+     else if(n.equals("sports")){sportsCheck = true;}
+    }
+
+    sb.setStudentCheck(studentCheck);
+    sb.setLocationCheck(locationCheck);
+    sb.setCampusCheck(campusCheck);
+    sb.setAtmosphereCheck(atmosphereCheck);
+    sb.setDormCheck(dormsCheck);
+    sb.setSportCheck(sportsCheck);
+
+    boolean friendRadio = false;
+    boolean televisionRadio = false;
+    boolean internetRadio = false;
+    boolean otherRadio = false;
+
+    String radio = request.getParameter("radio");
+
+    if(radio.equals("friends")){friendRadio = true;}
+    else if(radio.equals("television")){televisionRadio= true;}
+    else if(radio.equals("internet")){internetRadio= true;}
+    else if(radio.equals("other")){otherRadio= true;}
+
+    sb.setFriendRadio(friendRadio);
+    sb.setTvRadio(televisionRadio);
+    sb.setInternetRadio(internetRadio);
+    sb.setOtherRadio(otherRadio);
+
+    String gradMonth = request.getParameter("gradMonth");
+    sb.setGradMonth(gradMonth);
+
+    String gradYear = request.getParameter("grad_year");
+    sb.setGradYear(gradYear);
+
+    String howLikely = request.getParameter("recommend");
+    sb.setHowLikely(howLikely);
+
+    String comments = request.getParameter("comments");
+    sb.setComments(comments);
+
+    StudentDAO dao = new StudentDAO();
+    dao.save(sb);
 
     String[] nums = request.getParameter("data").split(",");
     //print(response,nums.toString());

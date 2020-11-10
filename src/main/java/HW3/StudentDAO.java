@@ -36,7 +36,7 @@ public class StudentDAO {
   public void save(StudentBean student)
   {
       try {
-          String sql = "INSERT IN TO SURVEYS (STUDENTID, USERNAME, NAME, STREET, CITY, STATE, ZIPCODE, PHONE, EMAIL, URL, DATE, LOCATIONCHECK, CAMPUSCHECK, ATMOSPHERECHECK, DORMCHECK, SPORTCHECK, STUDENTCHECK, FRIENDRADIO, TVRADIO, INTERNETRADIO, OTHERRADIO, GRADMONTH, GRADYEAR, HOWLIKELY, COMMENTS) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+          String sql = "INSERT INTO SURVEYS (STUDENTID, USERNAME, NAME, STREET, CITY, STATE, ZIPCODE, PHONE, EMAIL, URL, DAT, LOCATIONCHECK, CAMPUSCHECK, ATMOSPHERECHECK, DORMCHECK, SPORTCHECK, STUDENTCHECK, FRIENDRADIO, TVRADIO, INTERNETRADIO, OTHERRADIO, GRADMONTH, GRADYEAR, HOWLIKELY, COMMENTS) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
           PreparedStatement st = db.prepareStatement(sql);
           st.setString(1,student.getStudentID());
           st.setString(2,student.getUsername());
