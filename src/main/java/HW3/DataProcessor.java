@@ -6,7 +6,7 @@ public class DataProcessor
 {
   public DataProcessor() {}
   
-  public double mean(ArrayList<Integer> data)
+  public static double mean(ArrayList<Integer> data)
   {
     double mean = 0.0;
     for(int i : data)
@@ -16,7 +16,7 @@ public class DataProcessor
      return mean/data.size();
   }
   
-  public double standardDeviation(ArrayList<Integer> data)
+  public static double standardDeviation(ArrayList<Integer> data)
   {
       double mean = mean(data);
       double temp = 0.0;

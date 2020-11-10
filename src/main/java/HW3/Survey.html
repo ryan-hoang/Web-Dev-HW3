@@ -308,7 +308,7 @@ function parseJSON(data)
 
 <div id="error" title="Error" style="display:none"></div>
 
-<form id="survey_form" autocomplete="on">
+<form id="survey_form" autocomplete="on" action="./survey-servlet">
 <!--<h5> Required *</h5>-->
 
   <label for="studentID">Student ID</label><br>
@@ -329,7 +329,7 @@ State: <div id=state></div><br>
 -->
 
   <label for="city">City *</label><br>
-  <input type="text" id="city"'' name="city"placeholder="City" ><br><br>
+  <input type="text" id="city" name="city"placeholder="City" ><br><br>
   <label for="state">State *</label><br>
   <input type="text" id="state" name="state" placeholder="State" ><br><br>
 
@@ -415,7 +415,7 @@ State: <div id=state></div><br>
 <label for="grad_year">Graduation Year</label>
 <input type="text" name="grad_year" id="grad_year" placeholder="2020"></input>
 
-<h2>How likely are you to recommend George Mason to other prospective students?<h2>
+<h2>How likely are you to recommend George Mason to other prospective students?</h2>
   <input list="recommend">
 <datalist id="recommend">
   <option value ="Very Likely">
@@ -436,12 +436,12 @@ State: <div id=state></div><br>
 
 <br>
 
-  <h2>Additional Comments<h2>
+  <h2>Additional Comments</h2>
 
   <textarea name = "comments" rows="10" cols="30">
     </textarea>
     <br>
-    <button type="button" value="submit" onclick="formValidation()">Submit </button>
+    <button type="submit" value="submit" onclick="formValidation()">Submit </button>
     <input type="reset">
   </form>
 <img style="position: fixed; right: 0px; bottom: 0px;" src="mason.png" width ="50" height="50" alt="George Mason">
