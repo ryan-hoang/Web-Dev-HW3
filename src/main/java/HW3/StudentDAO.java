@@ -36,7 +36,7 @@ public class StudentDAO {
   public void save(StudentBean student)
   {
       try {
-          String sql = "INSERT INTO SURVEYS (STUDENTID, USERNAME, NAME, STREET, CITY, STATE, ZIPCODE, PHONE, EMAIL, URL, DAT, LOCATIONCHECK, CAMPUSCHECK, ATMOSPHERECHECK, DORMCHECK, SPORTCHECK, STUDENTCHECK, FRIENDRADIO, TVRADIO, INTERNETRADIO, OTHERRADIO, GRADMONTH, GRADYEAR, HOWLIKELY, COMMENTS) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+          String sql = "INSERT INTO hw3 (studentid, username, name, street, city, state, zipcode, phone, email, url, dat, locationcheck, campuscheck, atmospherecheck, dormcheck, sportcheck, studentcheck, friendradio, tvradio, internetradio, otherradio, gradmonth, gradyear, howlikely, comments) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
           PreparedStatement st = db.prepareStatement(sql);
           st.setString(1,student.getStudentID());
           st.setString(2,student.getUsername());
@@ -75,8 +75,9 @@ public class StudentDAO {
       StudentBean sb = new StudentBean();
       try
       {
-        PreparedStatement ps = db.prepareStatement("SELECT * FROM SURVEYS WHERE STUDENTID = " + StudentID);
+        PreparedStatement ps = db.prepareStatement("SELECT * FROM hw3 WHERE STUDENTID = " + StudentID);
         ResultSet rs = ps.executeQuery();
+
         String studentID = "";
         String username = "";
         String name = "";
@@ -169,7 +170,7 @@ public class StudentDAO {
         ArrayList<StudentBean> beans = new ArrayList<StudentBean>();
         try
         {
-            PreparedStatement ps = db.prepareStatement("SELECT * FROM SURVEYS");
+            PreparedStatement ps = db.prepareStatement("SELECT * FROM hw3");
             ResultSet rs = ps.executeQuery();
             String studentID = "";
             String username = "";

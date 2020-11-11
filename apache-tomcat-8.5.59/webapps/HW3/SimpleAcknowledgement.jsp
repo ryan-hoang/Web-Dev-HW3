@@ -16,7 +16,7 @@ ArrayList<StudentBean> beans = dao.pullAllBeans();
 out.println("<ul>");
 for(StudentBean sb : beans)
 {
-    out.println("<li><a href=\"localhost:8080/HW3/survey-servlet\">" + sb.getStudentID() + "</a></li>");
+    out.println("<li><a href=\"./survey-servlet?id="+ sb.getStudentID() +"\">" + sb.getStudentID() + "</a></li>");
 }
 
 out.println("</ul>");
