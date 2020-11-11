@@ -370,3 +370,6 @@
 0:0:0:0:0:0:0:1 - - [10/Nov/2020:20:36:35 -0500] "GET /HW3/survey-servlet?id=test HTTP/1.1" 200 866
 0:0:0:0:0:0:0:1 - - [10/Nov/2020:20:36:36 -0500] "GET /HW3/survey-servlet?id=another%20wrong%20zip HTTP/1.1" 200 876
 0:0:0:0:0:0:0:1 - - [10/Nov/2020:20:36:37 -0500] "GET /HW3/survey-servlet?id=second%20wrong%20zip HTTP/1.1" 200 864
+0:0:0:0:0:0:0:1 - - [10/Nov/2020:20:38:13 -0500] "GET /HW3/survey-servlet?id=wrongzip HTTP/1.1" 200 862
+0:0:0:0:0:0:0:1 - - [10/Nov/2020:20:38:16 -0500] "GET /HW3/survey-servlet?id=test HTTP/1.1" 200 866
+0:0:0:0:0:0:0:1 - - [10/Nov/2020:20:46:45 -0500] "GET /HW3/survey-servlet?id=123456 HTTP/1.1" 500 1118

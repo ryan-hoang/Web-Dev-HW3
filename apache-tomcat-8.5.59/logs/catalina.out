@@ -6470,3 +6470,51 @@ Connecting to a selected database...
 Connected database successfully...
 Connecting to a selected database...
 Connected database successfully...
+Connecting to a selected database...
+Connected database successfully...
+Connecting to a selected database...
+Connected database successfully...
+Connecting to a selected database...
+java.sql.SQLRecoverableException: IO Error: Unknown host specified 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:858)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:793)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:57)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:747)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:562)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at HW3.StudentDAO.pull(StudentDAO.java:89)
+	at HW3.SurveyServlet.doGet(SurveyServlet.java:159)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:616)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1626)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: oracle.net.ns.NetException: Unknown host specified 
+	at oracle.net.resolver.HostnameNamingAdapter.resolve(HostnameNamingAdapter.java:211)
+	at oracle.net.resolver.NameResolver.resolveName(NameResolver.java:143)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:510)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1600)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:591)
+	... 32 more
