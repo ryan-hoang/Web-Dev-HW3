@@ -75,7 +75,7 @@ public class StudentDAO {
       StudentBean sb = new StudentBean();
       try
       {
-        PreparedStatement ps = db.prepareStatement("SELECT * FROM hw3 WHERE STUDENTID = " + StudentID);
+        PreparedStatement ps = db.prepareStatement("SELECT * FROM hw3 WHERE studentid='" + StudentID+"'" );
         ResultSet rs = ps.executeQuery();
 
         String studentID = "";
