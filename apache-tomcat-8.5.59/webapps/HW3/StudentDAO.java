@@ -11,30 +11,28 @@ public class StudentDAO {
     static final String USER = "RHOANG";
     static final String PASS = "greejish";
 
-    private Connection db;
+    private Connection db = null;
 
-    public StudentDAO() {
-
-        db = null;
-        try {
-            //STEP 2: Register JDBC driver
-            Class.forName(JDBC_DRIVER);
-
-            //STEP 3: Open a connection
-            System.out.println("Connecting to a selected database...");
-            db = DriverManager.getConnection(DB_URL, USER, PASS);
-            System.out.println("Connected database successfully...");
-        } catch (SQLException se) {
-            //Handle errors for JDBC
-            se.printStackTrace();
-        } catch (Exception e) {
-            //Handle errors for Class.forName
-            e.printStackTrace();
-        }
-    }
+    public StudentDAO() { }
 
   public void save(StudentBean student)
   {
+      try {
+          //STEP 2: Register JDBC driver
+          Class.forName(JDBC_DRIVER);
+
+          //STEP 3: Open a connection
+          System.out.println("Connecting to a selected database...");
+          db = DriverManager.getConnection(DB_URL, USER, PASS);
+          System.out.println("Connected database successfully...");
+      } catch (SQLException se) {
+          //Handle errors for JDBC
+          se.printStackTrace();
+      } catch (Exception e) {
+          //Handle errors for Class.forName
+          e.printStackTrace();
+      }
+
       try {
           String sql = "INSERT INTO hw3 (studentid, username, name, street, city, state, zipcode, phone, email, url, dat, locationcheck, campuscheck, atmospherecheck, dormcheck, sportcheck, studentcheck, friendradio, tvradio, internetradio, otherradio, gradmonth, gradyear, howlikely, comments) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
           PreparedStatement st = db.prepareStatement(sql);
@@ -68,10 +66,36 @@ public class StudentDAO {
       } catch (SQLException e) {
           e.printStackTrace();
       }
+
+      try{
+          if(db!=null)
+          {
+              db.close();
+          }
+      } catch (SQLException e) {
+          e.printStackTrace();
+      }
+
   }
   
   public StudentBean pull(String StudentID)
   {
+      try {
+          //STEP 2: Register JDBC driver
+          Class.forName(JDBC_DRIVER);
+
+          //STEP 3: Open a connection
+          System.out.println("Connecting to a selected database...");
+          db = DriverManager.getConnection(DB_URL, USER, PASS);
+          System.out.println("Connected database successfully...");
+      } catch (SQLException se) {
+          //Handle errors for JDBC
+          se.printStackTrace();
+      } catch (Exception e) {
+          //Handle errors for Class.forName
+          e.printStackTrace();
+      }
+
       StudentBean sb = new StudentBean();
       try
       {
@@ -161,12 +185,39 @@ public class StudentDAO {
       catch (SQLException e) {
           e.printStackTrace();
       }
+
+      try{
+          if(db!=null)
+          {
+              db.close();
+          }
+      } catch (SQLException e) {
+          e.printStackTrace();
+      }
+
       return sb;
   }
 
 
     public ArrayList<StudentBean> pullAllBeans()
     {
+        try {
+            //STEP 2: Register JDBC driver
+            Class.forName(JDBC_DRIVER);
+
+            //STEP 3: Open a connection
+            System.out.println("Connecting to a selected database...");
+            db = DriverManager.getConnection(DB_URL, USER, PASS);
+            System.out.println("Connected database successfully...");
+        } catch (SQLException se) {
+            //Handle errors for JDBC
+            se.printStackTrace();
+        } catch (Exception e) {
+            //Handle errors for Class.forName
+            e.printStackTrace();
+        }
+
+
         ArrayList<StudentBean> beans = new ArrayList<StudentBean>();
         try
         {
@@ -258,6 +309,17 @@ public class StudentDAO {
         catch (SQLException e) {
             e.printStackTrace();
         }
+
+        try{
+            if(db!=null)
+            {
+                db.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
         return beans;
     }
   
